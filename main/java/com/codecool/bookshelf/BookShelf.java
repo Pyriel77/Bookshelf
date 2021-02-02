@@ -36,9 +36,8 @@ public class BookShelf {
 
         Book promp = books.stream().min(Comparator.comparing(Book::getWeightInGrams)).get();
 
-        System.out.println(promp);
 
-        return null;
+        return promp.getAuthor();
     }
 
     public String getAuthorOfMostWrittenPages() {
